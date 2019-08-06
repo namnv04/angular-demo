@@ -1,0 +1,22 @@
+<div id="header-area">
+  <div class="header-bg">
+    <div class="header-bg-image"></div>
+  </div>
+  <div class="container head-nav mat-typography" fxLayout="row" fxLayoutAlign="start center">
+    <div fxFlex="100px">
+      <mat-icon (click)="goHome()" class="logo-icon" aria-hidden="false" aria-label="logo">camera</mat-icon>
+    </div>
+    <div fxFlex="grow">
+      <nav class="main-nav">
+        <a routerLink="/">Currencies</a>
+        <a routerLink="/converter">Converter</a>
+      </nav>
+    </div>
+  </div>
+  <div class="container head-banner" fxLayout="row" fxLayoutAlign="center center">
+    <div>
+      <h1>DO IT YOURSELF</h1>
+      <ng-content select="[sub-title]"></ng-content>
+    </div>
+  </div>
+</div>

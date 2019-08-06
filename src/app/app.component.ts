@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'adp-demo';
+export class AppComponent implements OnInit {
+  subTitle = 'Online Coin Ranking';
+
+  ngOnInit() {
+  }
 }

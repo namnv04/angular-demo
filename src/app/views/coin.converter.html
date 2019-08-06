@@ -1,0 +1,39 @@
+<div class="container converter">
+  <br><h1>Converter</h1><br>
+
+  <div fxLayout="column" fxLayout.md="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <div >
+      <mat-form-field>
+        <input matInput placeholder="From" [(ngModel)]="fromValue" (input)="onFormChange()">
+      </mat-form-field>
+    </div>
+    <div >
+      <mat-form-field>
+          <mat-label>Coin</mat-label>
+          <mat-select (selectionChange)="onFormChange()" [(ngModel)]="fromCoin">
+            <mat-option *ngFor="let coin of coins" [(value)]="coin.symbol">
+              {{coin.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div>
+      =
+    </div>
+    <div >
+      <mat-form-field>
+          <input matInput readonly placeholder="" [(ngModel)]="toValue" (input)="onFormChange()">
+      </mat-form-field>
+    </div>
+    <div >
+      <mat-form-field>
+          <mat-label>Coin</mat-label>
+          <mat-select (selectionChange)="onFormChange()" [(ngModel)]="toCoin">
+              <mat-option *ngFor="let coin of coins" [(value)]="coin.symbol">
+              {{coin.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+#header-area {
+  height: 300px;
+  position: relative;
+  color: white;
+  background: #ba68c8;
+  z-index: 10;
+  .header-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .1;
+    z-index: -1;
+  }
+  .header-bg-image {
+    background: transparent url('../../assets/images/icon-seamless.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .head-nav {
+    height: 50px;
+    .logo-icon {
+      margin: 0 10px 0 0;
+    }
+    .main-nav {
+      text-align: right;
+      a {
+        height: 38px;
+        padding: 20px 20px 0;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        &:hover {
+          background-color: #f1f1f1;
+          color: #333;
+        }
+      }
+    }
+  }
+  .head-banner {
+    text-align: center;
+    height: 200px;
+  }
+}
